@@ -1,6 +1,6 @@
 a, b = map(int,input().split())
 
-for _ in range(a, b-1, a):
+for _ in range(a, b, 1):
     if a > b:
         break
     if a % 2 == 1:
