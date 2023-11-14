@@ -1,4 +1,6 @@
 a, b = map(int, input().split())
+if a > b:
+    a, b = b, a
 
 hap = 0
 for i in range(a, b+1):
