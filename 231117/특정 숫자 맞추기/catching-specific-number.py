@@ -7,3 +7,4 @@ while True:
         print("Higher")
     elif n == num:
         print("Good")
+        break
