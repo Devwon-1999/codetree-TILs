@@ -12,4 +12,4 @@ for i in range(a, b+1):
 if cnt:
     print("YES")
 else:
-    print("No")
+    print("NO")
