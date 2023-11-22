@@ -13,4 +13,5 @@ for i in range(n):
             minus -= 1
     if i % 2 == 1:
         cnt += n
+
     print()
