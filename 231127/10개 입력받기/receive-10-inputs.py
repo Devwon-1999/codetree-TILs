@@ -8,4 +8,4 @@ for i in arr:
 
 avg = sum(new) / len(new)
 
-print(sum(new), avg)
+print(sum(new), "%.1f" % avg)
