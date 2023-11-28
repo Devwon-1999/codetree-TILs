@@ -1,6 +1,6 @@
 n = int(input())
 
-arr = [0 for i in range(10)]
+arr = [0 for i in range(100)]
 
 arr[0] = 1
 arr[1] = n
