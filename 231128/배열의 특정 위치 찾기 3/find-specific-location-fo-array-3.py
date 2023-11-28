@@ -1,12 +1,8 @@
 arr = list(map(int, input().split()))
-cnt = 0
-add = 0
-for i in arr:
-    if i == 0:
-        break
-    cnt += 1
 
-for i in range(cnt+1):
-    add += arr[i]
-
-print(add)
+for i in range(100):
+	if arr[i] == 0:
+		k = i
+		break
+		
+print(arr[k - 3] + arr[k - 2] + arr[k - 1])
