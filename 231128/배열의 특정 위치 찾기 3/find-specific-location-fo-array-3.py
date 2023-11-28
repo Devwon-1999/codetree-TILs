@@ -6,7 +6,7 @@ for i in arr:
         break
     cnt += 1
 
-for i in range(cnt):
+for i in range(cnt+1):
     add += arr[i]
 
 print(add)
