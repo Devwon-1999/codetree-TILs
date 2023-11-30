@@ -5,7 +5,7 @@ for i in scoreList:
     if i == 0:
         break
     resultList[(i // 10)-1] += 1
-    
+print(resultList)
 resultList.reverse()
 
 for i in resultList:
