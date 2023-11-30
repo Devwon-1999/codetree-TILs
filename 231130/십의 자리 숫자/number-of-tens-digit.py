@@ -1,5 +1,5 @@
 inputNum = list(map(int, input().split()))
-resultList = list()
+resultList = list(0 for _ in range(len(inputNum)))
 answerList = list(0 for _ in range(9))
 index = 1
 
