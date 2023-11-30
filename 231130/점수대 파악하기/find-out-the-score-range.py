@@ -1,15 +1,12 @@
-scoreList = list(map(int, input().split()))
-resultList = [0 for i in range(10)]
-score = 100
-for i in scoreList:
-    if i == 0:
-        break
-	if i < 10:
-		continue
-    resultList[(i // 10)-1] += 1
-print(resultList)
-resultList.reverse()
+arr = list(map(int, input().split()))
+count_arr = [0] * 11
 
-for i in resultList:
-    print(f"{score} - {i}")
-    score -= 10
+for elem in arr:
+	if elem == 0:
+		break
+	if elem < 10:
+		continue
+	count_arr[elem // 10] += 1
+	
+for i in range(10, 0, -1):
+	print(f"{i}0 - {count_arr[i]}")
