@@ -4,6 +4,8 @@ score = 100
 for i in scoreList:
     if i == 0:
         break
+	if i < 10:
+		continue
     resultList[(i // 10)-1] += 1
 print(resultList)
 resultList.reverse()
