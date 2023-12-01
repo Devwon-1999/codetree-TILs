@@ -1,24 +1,36 @@
-a,b=map(int,input().split())
-arr=[a%b] 
-f=[]
-h=0
-for _ in range(1000):
-    if a//b<= 1:
-        break
-    a=a//b
-    c=a%b
-    arr.append(c)
-    
-    
-for i in range(9):
-    cnt=0
-    s=0
-    for j in arr:
-        if j==i:
-            cnt+=1
-            s=cnt**2
-    f.append(s)
+a, b = map(int,input().split())
+remainList = list()
+cntList = [0 for i in range(10)]
+add = 0
+while a >= 1:
+    remain = a % b
+    remainList.append(remain)
+    a //= b
 
-for k in f:
-    h+=k
-print(h)
+for i in remainList:
+    if i == 0:
+        cntList[0] += 1
+    elif i == 1:
+        cntList[1] += 1
+    elif i == 2:
+        cntList[2] += 1
+    elif i == 3:
+        cntList[3] += 1
+    elif i == 4:
+        cntList[4] += 1
+    elif i == 5:
+        cntList[5] += 1
+    elif i == 6:
+        cntList[6] += 1
+    elif i == 7:
+        cntList[7] += 1
+    elif i == 8:
+        cntList[8] += 1
+    elif i == 9:
+        cntList[9] += 1
+
+for i in cntList:
+    if i == 0:
+        continue
+    add += i ** i
+print(add)
