@@ -15,6 +15,5 @@ for i in range(a):
     if boolean:
         print("Yes")
         break
-    else:
-        print("No")
-        break
+if boolean == False:
+    print("No")
