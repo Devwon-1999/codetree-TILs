@@ -1,55 +1,24 @@
-n, q = map(int, input().split())
-nlist = list(map(int, input().split()))
-qlist = list()
+n, q = tuple(map(int,input().split()))
+	
+arr = list(map(int, input().split()))
 
-for i in range(q):
-    templist = list(map(int, input().split()))
-    qlist.append(templist)
-
-
-for i in qlist:
-    if i[0] == 1:
-        print(i[1])
-        continue
-    elif i[0] == 2:          
-        if i[1] in nlist:
-            print(nlist.index(i[1]) + 1)
-        else:
-            print(0)
-        continue
-    elif i[0] == 3:
-        for j in range(i[1]-1, i[2]):
-            print(nlist[j], end = " ")
-        continue
-    #print(i)
-    # if len(i) == 3:
-    #     if i[0] == 3:
-    #         for k in range(i[1], i[2]+1):
-    #             print(nlist[k], end=' ')
-    # elif len(i) == 2:           
-    #     for j in i:   
-    #         if i[0] == 1:
-    #             print(nlist[i[1]])
-    #         elif i[0] == 2:
-    #             if j == i[1]:
-    #                 print(nlist.index(i[1]))
-    #             else:
-    #                 print(0)
-        
-
-
-        # if len(i) == 2:
-            
-        # if len(i) == 3:
-
-# for i in range(0, q * 2, 2):
-
-#     if qlist[i] == 1:
-#         print(nlist[qlist[i]])
-#     elif qlist[i] == 2:
-#         for i in nlist:
-#             if i == qlist[i+1]:
-#                 print(nlist.index(qlist[i+1]))
-#             else:
-#                 print(0)
-#     elif qlist[i] == 3:
+for _ in range(q):
+	quest = list(map(int, input().split()))
+	
+	if quest[0] == 1:
+		a = quest[1]
+		print(arr[a - 1])
+		
+	elif quest[0] == 2:
+		a = quest[1]
+		idx = -1
+		if a in arr:
+			idx = arr.index(a)
+		print(idx + 1)
+		
+	else:
+		a = quest[1]
+		b = quest[2]
+		for i in range(a - 1, b):
+			print(arr[i], end=" ")
+		print()
