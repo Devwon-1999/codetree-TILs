@@ -8,4 +8,7 @@ for i in numList:
             numList.remove(i)
 
 
-print(max(numList))
+if max(numList):
+    print(max(numList))
+else:
+    print(-1)
