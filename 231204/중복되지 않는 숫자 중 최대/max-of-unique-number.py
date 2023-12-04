@@ -1,16 +1,17 @@
 n = int(input())
 
-numList = list(map(int, input().split()))
+numList = list(map(int,input().split()))
+resultList = list()
 
-for i in numList:
-    if numList.count(i) >= 2:
-        while i in numList:
-            numList.remove(i)
-            if i not in numList:
-                break
+for i in range(n):
+    for j in numList:
+        if numList.count(i) >= 2:
+            while i in numList:
+                numList.remove(i)
+        else:
+            continue
 
-
-if len(numList) == 0:
-    print(-1)
-else:
+if len(numList) >= 1:
     print(max(numList))
+else:
+    print(-1)
