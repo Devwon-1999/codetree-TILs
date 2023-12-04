@@ -9,7 +9,7 @@ for i in range(0, n):
         else:
             resultList.append(i)
 
-if len(numList) >= 1:
+if len(resultList) >= 1:
     print(max(resultList))
 else:
     print(-1)
