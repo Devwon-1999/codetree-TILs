@@ -8,9 +8,9 @@ for i in range(n):
             while i in numList:
                 numList.remove(i)
         else:
-            continue
+            resultList.append(i)
 
 if len(numList) >= 1:
-    print(max(numList))
+    print(max(resultList))
 else:
     print(-1)
