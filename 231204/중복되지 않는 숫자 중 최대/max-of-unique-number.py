@@ -4,15 +4,11 @@ numList = list(map(int, input().split()))
 
 maxUnique = -1
 
-for i in range(n):
-    isTrue = False
+numSet = set()
 
-    for j in range(i+1, n):
-        if numList[i] == numList[j]:
-            isTrue = True
-            break
+for i in numList:
+    if i not in numSet:
+        numSet.add(i)
+        maxUnique = max(maxUnique,i)
 
-    if not isTrue:
-        maxUnique = max(maxUnique,numList[i])
-
-print(maxUnique)
+print(maxUnique if maxUnique != -1 else -1)
