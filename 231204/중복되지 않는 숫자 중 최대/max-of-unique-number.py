@@ -1,17 +1,18 @@
 n = int(input())
 
-numList = list(map(int,input().split()))
-resultList = list()
+numList = list(map(int, input().split()))
 
-for i in range(0, n):
-        if numList.count(i) >= 2:
-            while i in numList:
-                numList.remove(i)
-            continue
-        else:
-            resultList.append(i)
+maxUnique = -1
 
-if len(resultList) >= 1:
-    print(max(resultList))
-else:
-    print(-1)
+for i in range(n):
+    isTrue = False
+
+    for j in range(i+1, n):
+        if numList[i] == numList[j]:
+            isTrue = True
+            break
+
+    if not isTrue:
+        maxUnique = max(maxUnique,numList[i])
+
+print(maxUnique)
