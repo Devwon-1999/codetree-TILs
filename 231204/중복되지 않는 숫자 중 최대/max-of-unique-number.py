@@ -4,7 +4,6 @@ numList = list(map(int,input().split()))
 resultList = list()
 
 for i in range(n):
-    for j in numList:
         if numList.count(i) >= 2:
             while i in numList:
                 numList.remove(i)
