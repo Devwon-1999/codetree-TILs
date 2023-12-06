@@ -5,11 +5,11 @@ answer = [
 ]
 value = 1
 
-for i in range(n + m - 2):
+for i in range(n + m - 1):
     for j in range(n):
         for k in range(m):
             if i == j + k and j < n and k < m:
-                answer[j][k] += value
+                answer[j][k] = value
                 value += 1
         
 
