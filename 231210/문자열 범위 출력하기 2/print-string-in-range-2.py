@@ -1,10 +1,7 @@
-a = input()
-
+s = str(input())
 n = int(input())
 
-if len(a) < n:
-    for i in a:
-        print(i,end="")
-else:
-    for i in range(len(a)-1, len(a)-n-1, -1):
-        print(a[i], end="")
+if n > len(s) :
+    print(reversed(s))
+else :     
+    print(s[-1:len(s) - n - 1:-1])
