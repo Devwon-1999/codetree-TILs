@@ -1,7 +1,11 @@
-s = str(input())
+string = input()
 n = int(input())
 
-if n > len(s) :
-    print(s[-1:0:-1])
-else :     
-    print(s[-1:len(s) - n - 1:-1])
+strLen = len(string)
+cnt = 0
+
+for i in range(strLen - 1, -1, -1):
+	if cnt >= n:
+		break
+	print(string[i], end="")
+	cnt += 1
