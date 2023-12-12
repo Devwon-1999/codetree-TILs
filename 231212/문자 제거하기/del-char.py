@@ -2,7 +2,7 @@ s = input()
 arr = list(s)
 while len(s) > 1:
     n = int(input())
-    if n > len(s):
+    if n >= len(s):
         arr.pop(-1)
         s = ''.join(arr)   
     else:
