@@ -14,5 +14,7 @@ for i in range(1, len(inputString)):
 if inputString:
     result += inputString[-1] + str(count)
 
-print(len(result))
+encoded_length = len(result)
+
+print(encoded_length)
 print(result)
