@@ -11,5 +11,8 @@ for i in range(1, len(inputString)):
     if i == len(inputString) - 1:
         result += inputString[i] + str(count)
 
+if inputString:
+    result += inputString[-1] + str(count)
+
 print(len(result))
 print(result)
