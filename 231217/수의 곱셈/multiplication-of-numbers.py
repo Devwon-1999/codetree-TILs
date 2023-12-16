@@ -1,6 +1,6 @@
 a, b, c = map(int, input().split())
 
-casesList = [a*b, b*c, c*a, a*b*c]
+casesList = [a*b, b*c, c*a, a*b*c, a, b, c]
 resultList = []
 secondList = []
 for i in casesList:
