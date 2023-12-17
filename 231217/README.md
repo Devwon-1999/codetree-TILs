@@ -3,7 +3,7 @@
 # 🥇 실전 훈련
 |총 문제 수|티어|유형|
 |---:|---|---|
-|9|![Bronze3][b3] ~ ![Bronze1][b1]|`Notation` `Conditional` `Greedy` `Simulation` `1d` `Exhaustive Search` `Min&Max` `Sort`|
+|9|![Bronze3][b3] ~ ![Bronze1][b1]|`Min&Max` `Exhaustive Search` `1d` `Greedy` `Conditional` `Simulation` `Sort` `Notation`|
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
