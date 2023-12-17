@@ -1,5 +1,8 @@
 n = int(input())
 cnt = 2
+if n == 0:
+    cnt -= 1
+
 ten = n // 10
 one = n % 10
 temp = one + ten
