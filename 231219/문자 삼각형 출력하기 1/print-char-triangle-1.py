@@ -5,6 +5,8 @@ for i in range(1, n+1):
         print(" ", end= " ")
         
     for j in range(1, i+1):
+        if cnt == 91:
+            cnt = 65
         print(chr(cnt), end= " ")    
         cnt = cnt + (n - j)
         
