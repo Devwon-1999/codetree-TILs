@@ -8,9 +8,6 @@ for i in range(n):
     for j in range(n):
         if cnt > 90:
             cnt = 65
-        elif cnt < 65:
-            temp = cnt - 90
-            cnt = temp + 65 - 1
         print(chr(cnt), end=" ")
         
         cnt = cnt - n
