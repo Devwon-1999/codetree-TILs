@@ -11,7 +11,8 @@ for i in range(n):
         if cnt > 90:
             cnt = 65
         elif cnt < 65:
-            cnt = 90
+            temp = 65 - cnt
+            cnt = 90 - temp
         print(chr(cnt), end=" ")
         cnt = cnt - n
     print()
