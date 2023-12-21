@@ -5,17 +5,12 @@ baeList = list()
 yakList = list()
 k = int(input())
 
-for i in numList:
-    if k % i == 0:
-        yakList.append(i)
+for i in range(n):
+    if numList[i] % k == 0:
+        yakList.append(k)
 
-    elif i % k == 0:
-        baeList.append(i)
-
-if k not in yakList:
-    yakList.append(k)
-if k not in baeList:
-    baeList.append(k)
+    if k % numList[i] == 0:
+        baeList.append(k)
 
 print(sum(yakList))
 print(sum(baeList))
