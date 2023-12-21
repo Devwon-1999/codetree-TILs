@@ -7,10 +7,10 @@ k = int(input())
 
 for i in range(n):
     if numList[i] % k == 0:
-        yakList.append(k)
+        baeList.append(numList[i])
 
     if k % numList[i] == 0:
-        baeList.append(k)
+        yakList.append(numList[i])
 
 print(sum(yakList))
 print(sum(baeList))
