@@ -17,6 +17,5 @@ if k not in yakList:
 if k not in baeList:
     baeList.append(k)
 
-print(yakList, baeList)
 print(sum(yakList))
 print(sum(baeList))
