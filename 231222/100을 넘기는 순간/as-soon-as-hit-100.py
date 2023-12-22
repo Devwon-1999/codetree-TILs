@@ -7,6 +7,6 @@ for i in numList:
         add += i
     elif i > 100:
         add += i
-        print(add)
-        print("%.1f" % (add/n))
-        break
+        
+print(add)
+print("%.1f" % (add/n))
