@@ -12,6 +12,9 @@ if n == 2:
             if a % i == 0 and b % i == 0:
                 result.append(i)
 
+    else:
+        result.append(a)
+
 elif n == 3:
     numList = list(map(int, input().split()))
     for i in range(1, min(numList) + 1):
