@@ -7,8 +7,9 @@ for i in a:
         eeTrue = "YES"
     if i == "e" and a[index] == "a":
         eaTrue = "YES"
-    index += 1
     if index > len(a):
         index -= 1
+    else:
+        index += 1
 
 print(eeTrue, eaTrue)
