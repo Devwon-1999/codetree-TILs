@@ -8,5 +8,7 @@ for i in a:
     if i == "e" and a[index] == "a":
         eaTrue = "YES"
     index += 1
+    if index > len(a):
+        index -= 1
 
 print(eeTrue, eaTrue)
