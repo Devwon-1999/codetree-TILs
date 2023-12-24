@@ -1,15 +1,14 @@
 a = input()
-index = 1
+
 eeTrue = "NO"
 eaTrue = "NO"
-for i in a:
-    if i == "e" and a[index] == "e":
+for i in range(len(a)):
+    if i + 1 > len(a):
+        break
+    if a[i] == "e" and a[i+1] == "e":
         eeTrue = "YES"
-    if i == "e" and a[index] == "a":
+    if a[i] == "e" and a[i+1] == "a":
         eaTrue = "YES"
-    if index == len(a):
-        index -= 1
-    else:
-        index += 1
+    
 
 print(eeTrue, eaTrue)
