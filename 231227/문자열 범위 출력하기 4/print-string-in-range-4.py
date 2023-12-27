@@ -1,4 +1,4 @@
 n = int(input())
 s = input()
 
-print(s[:11])
+print(s[:n])
