@@ -8,5 +8,7 @@ elif a == "G":
     print("Good")
 elif a == "U":
     print("Usually")
-elif a == "S":
-    print("")
+elif a == "E":
+    print("Effort")
+else:
+    print("Failure")
