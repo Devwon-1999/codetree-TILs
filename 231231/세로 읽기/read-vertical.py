@@ -5,7 +5,7 @@ for i in range(5):
     temp += "            "
     strList.append(temp)
 
-for i in range(3):
+for i in range(15):
     for j in range(5):
         if strList[j][i] != "":
             print(strList[j][i], end="")
