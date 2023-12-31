@@ -7,7 +7,7 @@ for i in range(5):
 
 for i in range(15):
     for j in range(5):
-        if strList[j][i] != "":
-            print(strList[j][i], end="")
+        if strList[j][i] == " ":
+            pass
         else:
-            continue
+            print(strList[j][i], end="")
