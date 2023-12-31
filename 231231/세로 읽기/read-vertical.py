@@ -2,7 +2,7 @@ strList = []
 
 for i in range(5):
     temp = input()
-    temp += "            "
+    temp += "                             "
     strList.append(temp)
 
 for i in range(15):
