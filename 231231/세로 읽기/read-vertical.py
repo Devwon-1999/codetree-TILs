@@ -6,7 +6,7 @@ for i in range(5):
 
 for i in range(3):
     for j in range(5):
-        if strList[j][i] != "":
+        if strList[j][i]:
             print(strList[j][i],end="")
         else:
             continue
