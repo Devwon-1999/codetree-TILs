@@ -11,7 +11,7 @@ elif order == 2:
             print("*", end="")
         print()            
 elif order == 3:
-    for i in range(size, 0, -1):
+    for i in range(size - 1, 0, -1):
         for j in range(i):
             print("", end = " ")
         for j in range(temp):
