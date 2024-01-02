@@ -1,14 +1,10 @@
-n = list(input())
-n.reverse()
-sum = 0
+n = list(map(int, input()))
+total = 0
+
+for i in reversed(n):
+    print(i, end="")
+print(" ", end="")
 for i in n:
-    print(i, end = "")
+    total += i
 
-print(" ", end = "")
-
-for i in n:
-    i = float(i)
-    i = int(i)
-    sum += i
-
-print(sum)
+print(total)
