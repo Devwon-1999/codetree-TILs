@@ -1,8 +1,10 @@
 n = int(input())
 meaList = []
 for i in range(1, int(n**0.5) + 1):
-        if n % i == 0:
-            meaList.append(i)
+    if n % i == 0:
+        meaList.append(i)
+        if i != n:
+            meaList.append(n // i)
 
 if len(meaList) == 1:
     print("one")
