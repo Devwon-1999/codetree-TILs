@@ -11,8 +11,8 @@ elif order == 2:
             print("*", end="")
         print()            
 elif order == 3:
-    for i in range(size - 1, 0, -1):
-        for j in range(i):
+    for i in range(size, 0, -1):
+        for j in range(i - 1):
             print("", end = " ")
         for j in range(temp):
             print("*", end = "")
