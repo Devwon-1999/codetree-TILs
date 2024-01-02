@@ -7,6 +7,7 @@ for i in n:
 print(" ", end = "")
 
 for i in n:
+    i = float(i)
     i = int(i)
     sum += i
 
