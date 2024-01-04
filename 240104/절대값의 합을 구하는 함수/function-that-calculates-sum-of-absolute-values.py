@@ -2,9 +2,9 @@ def sumAbsoluteValue(arr):
     result = 0
     for i in arr:
         if i > 0:
-            continue
+            pass
         else:
-            i *= -1
+            i = -i
         result += i
     return result
 
