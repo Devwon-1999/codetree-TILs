@@ -6,8 +6,9 @@ def printSumAvg(a, b, c):
     c = round(c)
 
     sumNum = a + b + c
-    avgNum = sumNum // 3
-
+    avgNum = sumNum / 3
+    avgNum = round(avgNum)
+    
     print(sumNum)
     print(avgNum)
 
