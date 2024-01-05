@@ -9,10 +9,14 @@ for i in numList:
     else:
         max99.append(i)
 
-if not max99:
-    print(-1, end = " ")
-else:
+if 100 - max(max99) == min(min100) - 100:
+    print(max99, end = " ")
+elif 100 - max(max99) > min(min100) - 100:
+    print(min(min100), end = " ")
+elif 100 - max(max99) < min(min100) - 100:
     print(max(max99), end = " ")
+
+
 
 if not min100:
     print(-1, end = " ")
