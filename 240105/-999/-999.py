@@ -1,5 +1,6 @@
 numList = list(map(int, input().split()))
 
-numList.remove(-999)
+index999 = numList.index(-999)
+numList = numList[0: index999]
 
 print(max(numList), min(numList))
