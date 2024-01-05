@@ -4,4 +4,5 @@ numList = list(map(int, input().split()))
 
 numList.reverse()
 
-print(numList)
+for i in numList:
+    print(i, end=" ")
