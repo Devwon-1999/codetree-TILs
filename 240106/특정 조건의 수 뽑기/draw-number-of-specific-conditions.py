@@ -8,13 +8,18 @@ for i in numList:
         min100.append(i)
     else:
         max99.append(i)
-
-if 100 - max(max99) == min(min100) - 100:
-    print(max99, end = " ")
-elif 100 - max(max99) > min(min100) - 100:
-    print(min(min100), end = " ")
-elif 100 - max(max99) < min(min100) - 100:
-    print(max(max99), end = " ")
+if min100:
+    if max99:
+        if 100 - max(max99) == min(min100) - 100:
+            print(max99, end = " ")
+        elif 100 - max(max99) > min(min100) - 100:
+            print(min(min100), end = " ")
+        elif 100 - max(max99) < min(min100) - 100:
+            print(max(max99), end = " ")
+    else:
+        print(-1, end = " ")
+else:
+    print(-1, end = " ")
 
 
 
