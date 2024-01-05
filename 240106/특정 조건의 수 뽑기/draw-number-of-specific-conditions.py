@@ -21,6 +21,6 @@ if min100:
 
 
 if not min100:
-    print(-1, end = " ")
+    print(max(max99), -1, end = " ")
 else:
     print(min(min100), end = " ")
