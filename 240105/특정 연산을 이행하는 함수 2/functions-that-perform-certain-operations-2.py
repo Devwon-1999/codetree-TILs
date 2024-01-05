@@ -15,8 +15,7 @@ def specialCul(numList):
 
     numList[midValueIndex] = round(numList[midValueIndex])
 
-    for i in numList:
-        print(i, end = " ")
+    print(numList[maxValueIndex], numList[minValueIndex], numList[midValueIndex])
 
 
 numList = list(map(float, input().split()))
