@@ -1,7 +1,7 @@
 baseStr = input()
 search = input()
 
-if baseStr.index(search):
-    print(baseStr.index(search) + 1)
-else:
+if baseStr.find(search):
+    print(baseStr.find(search) + 1)
+if baseStr.find(search) == -1:
     print('Not Found')
