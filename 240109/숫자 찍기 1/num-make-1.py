@@ -24,12 +24,12 @@ elif order == 2:
         num += 1
 
 elif order == 3:
-    for i in range(1, size - 2):
+    for i in range(1, size // 2):
         for j in range(1, i + 1):
             print(j, end=" ")
         print()
 
-    for i in range(size - 2, 0, -1):
+    for i in range(size // 2 , 0, -1):
         for j in range(1, i + 1):
             print(j, end=" ")
         print()
