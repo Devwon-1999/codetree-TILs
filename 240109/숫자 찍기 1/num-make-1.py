@@ -15,7 +15,7 @@ if order == 1:
 
 elif order == 2:
     num = 0
-    for i in range(5, 0, -1):
+    for i in range(size, 0, -1):
         for j in range(size - i):
             print(" ", end = " ")
         for j in range(i * 2 - 1):
