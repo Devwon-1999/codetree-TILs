@@ -1,4 +1,4 @@
-base, num, trans = map(int, input().split())  
+base, num, trans = input().split()
 if base != 10:
     num = str(num)
     num_10 = int(num, base)
