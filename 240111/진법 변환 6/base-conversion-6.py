@@ -9,6 +9,7 @@ if t_formation < 10:
     print(result_10, result_1, sep = "")
 elif t_formation >= 10:
     result_1 = fNum % t_formation
+    result_1 = str(result_1)
     if result_1 == 10:
         result_1 = "a"
     elif result_1 == 11:
