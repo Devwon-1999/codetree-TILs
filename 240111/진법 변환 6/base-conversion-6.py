@@ -1,9 +1,12 @@
 base, num, trans = input().split()
 base = int(base)
 trans = int(trans)
+
 if base != 10:
     num = str(num)
     num_10 = int(num, base) 
+else:
+    num_10 = int(num)
 
 def solution(n, q):
     rev_base = ''
