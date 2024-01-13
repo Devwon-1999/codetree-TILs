@@ -1,5 +1,9 @@
 def three_six_nine(n):
-    if n % 10 == 3 or n % 10 == 6 or n % 10 == 9 or n // 10 == 3 or n // 10 == 6 or n // 10 == 9:
+    numList = []
+    for i in str(n):
+        numList.append(i)
+
+    if "3" in numList or "6" in numList or "9" in numList:
         return 1
     else:
         return 0
