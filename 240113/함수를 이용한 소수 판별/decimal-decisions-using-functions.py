@@ -4,7 +4,7 @@ def decimal(n):
         if n % i == 0:
             isPrime = False
             return isPrime
-    return True
+    return isPrime
 
 
 a, b = map(int, input().split())
