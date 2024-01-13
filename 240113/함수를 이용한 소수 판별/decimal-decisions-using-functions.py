@@ -1,10 +1,8 @@
 def decimal(n):
-    isPrime = True
-    for i in range(2, n - 1):
+    for i in range(2, n):
         if n % i == 0:
-            isPrime = False
-            return isPrime
-    return isPrime
+            return False
+    return True
 
 
 a, b = map(int, input().split())
