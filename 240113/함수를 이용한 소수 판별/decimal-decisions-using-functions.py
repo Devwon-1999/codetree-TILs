@@ -11,11 +11,12 @@ a, b = map(int, input().split())
 
 primeList = []
 
-if a == 1 and b == 1:
-    print(1)
-else:
-    for i in range(a, b + 1):
-        if decimal(i):
-            primeList.append(i)
 
+for i in range(a, b + 1):
+    if decimal(i):
+        primeList.append(i)
+
+if primeList:
     print(sum(primeList))
+else:
+    print(0)
