@@ -1,8 +1,7 @@
 def modify(numList):
-    for i in numList:
-        if i % 2 == 0:
-            index = numList.index(i)
-            numList[index] = i // 2
+    for i in range(N):
+        if numList[i] % 2 == 0:
+            numList[i] //= 2
 
 
 
