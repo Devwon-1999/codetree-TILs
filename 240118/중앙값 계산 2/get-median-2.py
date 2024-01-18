@@ -8,4 +8,4 @@ for i in range(len(numList)):
         if i == 0:
             print(temp[i], end = " ")
         else:
-            print(temp[len(temp) // 2], end = " ")
+            print(temp[i // 2], end = " ")
