@@ -25,9 +25,9 @@ for i in range(n):
             if a > 90:
                 a = (a % 90) % 25 + 65 
                 if temp >= 25:
-                    a += 1
-                else:
                     a -= 1
+                else:
+                    a += 1
 
     trans1 -= 2
     trans2 += 2
