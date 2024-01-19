@@ -6,6 +6,8 @@ trans2 = 1
 
 for i in range(n):
     a = 65 + i
+    if a > 90:
+        a = a - 90 + 65 - 1
     for j in range(n):
         print(chr(a),end=" ")
         if j % 2 == 0:
