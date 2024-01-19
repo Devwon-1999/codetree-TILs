@@ -12,8 +12,10 @@ for i in range(n):
             a += trans1
         else:
             a += trans2
-        if a > 90:
+        if a > 90 and j % 2 == 0:
             a = a + trans1 - 90 + 65
+        elif a > 90 and j % 2 == 1:
+            a = a + trans2 - 90 + 65
 
     trans1 -= 2
     trans2 += 2
