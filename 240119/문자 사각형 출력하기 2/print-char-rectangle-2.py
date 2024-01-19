@@ -14,6 +14,7 @@ for i in range(n):
             a += trans2
         if a > 90 and j % 2 == 0:
             a = a + trans1 - 90 + 65
+            print(a)
         elif a > 90 and j % 2 == 1:
             a = a + trans2 - 90 + 65
 
