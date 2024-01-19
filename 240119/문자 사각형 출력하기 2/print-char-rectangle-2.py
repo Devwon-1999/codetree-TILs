@@ -6,21 +6,15 @@ trans2 = 1
 
 for i in range(n):
     a = 65 + i
-    if a > 90:
-        a = 65 + a % 65
-    if i % 2 == 0:
-        for j in range(n):
-            print(chr(a),end=" ")
+    for j in range(n):
+        print(chr(a),end=" ")
+        if j % 2 == 0:
             a += trans1
-            temp = trans1
-            trans1 = trans2
-            trans2 = temp
-            if a > 90:
-                a = 65 + a % 65
-    else:
-        for j in range(n):
-            print(chr(a),end=" ")
-            a += n
-            if a > 90:
-                a = 65 + a % 65
+        else:
+            a += trans2
+        if a > 90:
+            a = a + 11 - 90 + 65
+
+    trans1 -= 2
+    trans2 += 2
     print()
