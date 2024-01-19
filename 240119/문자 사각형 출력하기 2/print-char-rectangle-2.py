@@ -13,7 +13,7 @@ for i in range(n):
         else:
             a += trans2
         if a > 90:
-            a = a + 11 - 90 + 65
+            a = a + trans1 - 90 + 65
 
     trans1 -= 2
     trans2 += 2
