@@ -1,7 +1,7 @@
 day, hour, mins = 11, 11, 11
 a, b, c = map(int, input().split())
 elapsed_time = 0
-if day <= a and hour <= b and mins <= c:
+if day < a or (day == a and hour <= b):
     while True:
         if day == a and hour == b and mins == c:
             break
