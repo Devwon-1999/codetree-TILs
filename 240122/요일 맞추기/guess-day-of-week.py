@@ -1,26 +1,18 @@
-def day_of_week(year, month, day):
-    days_of_week = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
+month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+date = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-    elapsed_days = 0
-    for y in range(2011, year):
-        if y % 4 == 0 and (y % 100 != 0 or y % 400 == 0):
-            elapsed_days += 366
-        else:
-            elapsed_days += 365
+m1, d1, m2, d2 = tuple(map(int, input().split()))
 
-    for m in range(1, month):
-        elapsed_days += num_of_days[m]
+def month_date(m):
+    m_date = 0
+    for i in range(1, m):
+        m_date += month[i]
+    return m_date
 
-    elapsed_days += day - 1
+m_date = month_date(m2) - month_date(m1)
+total_date = m_date + (d2 - d1)
 
-    return days_of_week[(elapsed_days + 5) % 7]
+if total_date < 0:
+    total_date += 7
 
-m1, d1, m2, d2 = map(int, input().split())
-
-num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
-day1 = day_of_week(2011, m1, d1)
-
-day2 = day_of_week(2011, m2, d2)
-
-print(day2)
+print(date[total_date % 7])
