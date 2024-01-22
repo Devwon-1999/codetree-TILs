@@ -10,5 +10,8 @@ for i in range(a, b + 1):
         result.append(i)
             
 
-print(sum(result))
-print(min(result))
+if result:
+    print(sum(result))
+    print(min(result))
+else:
+    print(-1)
