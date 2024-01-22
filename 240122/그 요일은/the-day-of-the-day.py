@@ -13,7 +13,7 @@ def day_of_week(year, month, day):
 
     elapsed_days += day - 1
 
-    return days_of_week[(elapsed_days + 1) % 7]
+    return days_of_week[elapsed_days % 7]
 
 
 m1, d1, m2, d2 = map(int, input().split())
