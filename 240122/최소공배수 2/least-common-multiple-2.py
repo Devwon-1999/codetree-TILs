@@ -1,7 +1,11 @@
-a, b = map(int, input().split())
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
-for i in range(1, a * b + 1):
-    if i % a == 0 and i % b == 0:
-        
-        print(i)
-        break
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+a, b = map(int, input().split())
+result = lcm(a, b)
+print(result)
