@@ -11,7 +11,7 @@ for i in range(N):
     height, weight = int(height), int(weight)
     base.append(student(height, weight, i+1))
 
-base.sort(key = lambda x :(-x.height, -x.weight, -x.num))
+base.sort(key = lambda x :(-x.height, -x.weight, x.num))
 
 for i in range(len(base)):
     print(base[i].height, base[i].weight, base[i].num)
