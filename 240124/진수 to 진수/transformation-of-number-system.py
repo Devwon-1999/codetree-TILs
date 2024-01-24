@@ -15,9 +15,10 @@ for i in list_a:
 
 # 10진수를 n을 b 진수로
 result = []
+b = int(b)
 while num > 0:
-    digit = num % 2
-    num = num // 2
+    digit = num % b
+    num = num // b
     result.append(digit)
 
 for i in range(len(result) - 1, -1, -1):
