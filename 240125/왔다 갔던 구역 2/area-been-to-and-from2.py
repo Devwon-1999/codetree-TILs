@@ -2,7 +2,7 @@ n = int(input())
 
 now_place = 0
 
-position_count = [0] * 2001  
+position_count = [0] * 2001 
 
 for i in range(n):
     length, order = input().split()
@@ -12,7 +12,7 @@ for i in range(n):
     if order == "L":
         for i in range(now_place, now_place - length, -1):
             position_count[i] += 1
-        now_place -= length  
+        now_place -= length 
 
     elif order == "R":
         for i in range(now_place, now_place + length):
