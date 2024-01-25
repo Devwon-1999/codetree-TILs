@@ -10,7 +10,7 @@ for i in range(n):
 maxValue = max(max(temp))
 minValue = min(min(temp))
 
-result = [0 for i in range(minValue, maxValue + 1)]
+result = [0 for i in range(101)]
     
 for i in temp:
     for j in range(i[0], i[1] + 1):
