@@ -1,23 +1,31 @@
 n = int(input())
 
-now_place = 0
+cur = 0
+segments = []
 
-position_count = [0] * 2001 
+for _ in range(n):
+    distance, direction = tuple(input().split())
+    distance = int(distance)
 
-for i in range(n):
-    length, order = input().split()
+    section_left, section_right = 0, 0
 
-    length = int(length)
+    if direction == 'L':
+        section_left = cur - distance
+        section_right = cur
+        cur -= distance
+    else:
+        section_left = cur
+        section_right = cur + distance
+        cur += distance
 
-    if order == "L":
-        for i in range(now_place, now_place - length, -1):
-            position_count[i] += 1
-        now_place -= length 
+    segments.append([section_left, section_right])
 
-    elif order == "R":
-        for i in range(now_place, now_place + length):
-            position_count[i] += 1
-        now_place += length
 
-answer = sum(1 for count in position_count if count >= 2)
+visited_count = [0] * 2001  
+
+for segment in segments:
+    for i in range(segment[0], segment[1]):
+        visited_count[i] += 1
+
+answer = sum(1 for count in visited_count if count >= 2)
 print(answer)
