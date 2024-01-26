@@ -15,5 +15,7 @@ result = []
 for i in range(a, b + 1):
     if isPrime(i):
         result.append(i)
-
-print(sum(result), min(result))
+if result:
+    print(sum(result), min(result))
+else:
+    print(0, 0)
