@@ -18,5 +18,5 @@ else:
         else:
             result.append(cnt)
             cnt = 0
-
+    result.append(cnt)
     print(max(result) + 1)
