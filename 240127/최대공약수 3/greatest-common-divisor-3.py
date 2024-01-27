@@ -18,4 +18,4 @@ b = 1
 for i in m_list:
     b *= i
 
-print(gcd(a, b))
+print(gcd(a, b) % ((10**9) + 7))
