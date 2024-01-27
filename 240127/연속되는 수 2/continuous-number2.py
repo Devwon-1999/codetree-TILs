@@ -3,10 +3,17 @@ base = []
 for i in range(n):
     temp = int(input())
     base.append(temp)
-
+result = []
 cnt = 0
-for i in range(n):
-    if i == 0 or base[i] != base[i - 1]:
+for i in range(len(base)):
+    if i + 1 >= len(base):
+        break
+
+    if base[i] == base[i + 1]:
         cnt += 1
 
-print(cnt)
+    else:
+        result.append(cnt)
+        cnt = 0
+
+print(max(result) + 1)
