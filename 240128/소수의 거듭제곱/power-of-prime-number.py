@@ -10,7 +10,7 @@ def isPrime(n):
 def count_prime_powers(a, b):
     primes = []
     for num in range(a, b + 1):
-        if is_prime(num):
+        if isPrime(num):
             primes.append(num)
 
     cnt = 0
