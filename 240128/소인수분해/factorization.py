@@ -11,10 +11,10 @@ def prime_factors(n):
 
 n = int(input())
 
-if n == 1:
-    print(-1)
+# if n == 1:
+#     print(-1)
 
-else:
-    result = prime_factors(n)
-    for i in result:
-        print(i)
+# else:
+result = prime_factors(n)
+for i in result:
+    print(i)
