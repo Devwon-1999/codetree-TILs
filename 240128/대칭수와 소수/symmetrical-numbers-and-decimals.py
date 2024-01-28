@@ -17,7 +17,7 @@ def palindromic(n):
 
 n = int(input())
 
-for i in range(n, 1000000):
+for i in range(n, 1000000000000000000000000):
     if isPrime(i) and palindromic(i):
         print(i)
         break
