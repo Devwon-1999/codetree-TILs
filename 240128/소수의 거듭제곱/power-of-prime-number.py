@@ -1,24 +1,26 @@
-def isPrime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+def sieve_of_eratosthenes(limit):
+    primes = [True] * (limit + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(limit**0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, limit + 1, i):
+                primes[j] = False
+    return [num for num in range(limit + 1) if primes[num]]
 
 
 def count_prime_powers(a, b):
-    primes = []
-    for num in range(a, b + 1):
-        if isPrime(num):
-            primes.append(num)
+    limit = int(b**0.5) + 1
+    primes = sieve_of_eratosthenes(limit)
 
     cnt = 0
     for prime in primes:
         power = 2
-        while prime ** power <= b:
-            cnt += 1
+        current = prime ** power
+        while current <= b:
+            if current >= a:
+                cnt += 1
             power += 1
+            current = prime ** power
 
     return cnt
 
