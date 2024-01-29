@@ -23,5 +23,5 @@ else:
             cnt = 0
     result.append(cnt)
 
-
-print(max(result) + 1)
+if result:
+    print(max(result) + 1)
