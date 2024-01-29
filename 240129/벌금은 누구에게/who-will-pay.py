@@ -11,6 +11,7 @@ for i in result:
     if i >= K:
         answer.append(i)
         print(result.index(max(result)) + 1)
+        break
 
 if answer:
     pass
