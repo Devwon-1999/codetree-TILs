@@ -28,9 +28,13 @@ for i in range(M): # B
         for i in range(length):
             now_B -= 1
             B.append(now_B)
+            
 result = 0
 for i in range(len(A)):
     result += 1
     if A[i] == B[i]:
         print(result)
         break
+
+if result == 0:
+    print(-1)
