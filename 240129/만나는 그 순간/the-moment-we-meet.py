@@ -28,13 +28,16 @@ for i in range(M): # B
         for i in range(length):
             now_B -= 1
             B.append(now_B)
-            
+
 result = 0
+result_list = []
 for i in range(len(A)):
     result += 1
     if A[i] == B[i]:
-        print(result)
+        result_list.append(result)
         break
 
-if result == 0:
+if result_list:
+    print(max(result_list))
+else:
     print(-1)
