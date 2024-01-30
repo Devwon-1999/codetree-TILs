@@ -36,18 +36,33 @@ for i in range(m): #B
 
 
 loop = 0 #반복문을 돌릴 횟수
+index = 0
+end = 0
 if len(A_move) >= len(B_move):
     loop = len(B_move)
-
+    end = len(A_move)
 elif len(A_move) < len(B_move):
     loop = len(A_move)
-
+    end = len(B_move)
 cnt = 0 #만나는 횟수
+
+
 for i in range(loop):
     if i + 1 == loop:
         break
-
+        
     if A_move[i] != B_move[i] and A_move[i+1] == B_move[i+1]:
         cnt += 1
-    
-print(cnt + 1)
+    index += 1
+
+if len(A_move) >= len(B_move):
+    for i in range(index, end):
+        if B_move[index] == A_move[i]:
+            cnt += 1
+elif len(A_move) < len(B_move):
+    for i in range(index, end):
+        if A_move[index] == B_move[i]:
+            cnt += 1
+
+
+print(cnt)
