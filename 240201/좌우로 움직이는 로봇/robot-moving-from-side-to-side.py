@@ -54,7 +54,7 @@ for i in range(loop):
         cnt += 1
     index += 1
 
-if len(A_move) >= len(B_move):
+if len(A_move) > len(B_move):
     for i in range(index, end):
         if B_move[index-1] == A_move[i-1] and B_move[index] == A_move[i]:
             cnt += 1
