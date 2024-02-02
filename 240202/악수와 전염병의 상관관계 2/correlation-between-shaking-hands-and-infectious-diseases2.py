@@ -16,15 +16,17 @@ for i in range(T):
 
 T_List.sort()
 
+
 for i in T_List:
-    if (i[1] == P or developer[i[1] - 1] == 1) and spread[i[1] - 1] > 0:
+
+    if (i[1] == P or developer[i[1] - 1] == 1) and spread[i[1] - 1] > 0: # 악수 리스트중 [1] 이 양성이고 전파력이 있을때 전파
         developer[i[2] - 1] = 1
-        spread[i[1] - 1] -= 1
-    elif (i[2] == P or developer[i[2] - 1] == 1) and spread[i[2] - 1] > 0:
+        
+    elif (i[2] == P or developer[i[2] - 1] == 1) and spread[i[2] - 1] > 0: # 악수 리스트중 [2] 이 양성이고 전파력이 있을때 전파
         developer[i[1] - 1] = 1
         spread[i[2] - 1] -= 1
-    else:
-        continue
+
+    spread[i[1] - 1] -= 1
 
 result = ""
 
