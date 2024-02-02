@@ -1,8 +1,8 @@
 n = int(input())
-now = 500
-result = [" " for i in range(1001)]
-blackcnt = [0 for i in range(1001)]
-whitecnt = [0 for i in range(1001)]
+now = 5000
+result = [" " for i in range(10001)]
+blackcnt = [0 for i in range(10001)]
+whitecnt = [0 for i in range(10001)]
 
 for i in range(n):
 	length, order = input().split()
