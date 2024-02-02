@@ -1,6 +1,6 @@
 n = int(input())
-now = 10
-result = [" " for i in range(21)]
+now = 5000
+result = [" " for i in range(10001)]
 
 for i in range(n):
 	size, order = input().split()
