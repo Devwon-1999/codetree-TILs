@@ -38,9 +38,9 @@ for indexy, i in enumerate(result):
             b = indexy
             answer.append([a, b])
 
-x1 = 2001
+x1 = 2000
 x2 = 0
-y1 = 2001
+y1 = 2000
 y2 = 0
 
 for i in answer:
