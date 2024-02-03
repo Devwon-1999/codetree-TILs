@@ -42,15 +42,17 @@ x1 = 2000
 x2 = 0
 y1 = 2000
 y2 = 0
-
-for i in answer:
-    if x2 < i[0]:
-        x2 = i[0]
-    if x1 > i[0]:
-        x1 = i[0]
-    if y2 < i[1]:
-        y2 = i[1]
-    if y1 > i[1]:
-        y1 = i[1]
-        
-print((x2 - x1 + 1) * (y2 - y1 + 1))
+if answer:
+    for i in answer:
+        if x2 < i[0]:
+            x2 = i[0]
+        if x1 > i[0]:
+            x1 = i[0]
+        if y2 < i[1]:
+            y2 = i[1]
+        if y1 > i[1]:
+            y1 = i[1]
+            
+    print((x2 - x1 + 1) * (y2 - y1 + 1))
+else:
+    print(0)
