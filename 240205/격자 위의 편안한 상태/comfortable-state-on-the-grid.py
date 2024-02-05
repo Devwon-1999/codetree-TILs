@@ -17,7 +17,7 @@ for i in range(M):
         nx, ny = x + dx, y + dy
         if in_range(nx, ny) and base[nx][ny] == 1: #좌표 값이 1인경우를 확인 후
             cnt += 1
-    if cnt >= 3: # 좌표값이 1인 경우가 3번 이상이라면
+    if cnt == 3: # 좌표값이 1인 경우가 3번 이상이라면
         print(1)
     else:
         print(0)
