@@ -23,6 +23,10 @@ for i in range(N):
         x, y = x + dxs[dir_num], y + dys[dir_num]
         if x == 0 and y == 0:
             result = time
+            break
+    if x == 0 and y == 0:
+        break
+    
         
 if result:
     print(result)
