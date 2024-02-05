@@ -7,18 +7,19 @@ def in_range(x, y):
 
 
 dxs, dys = [0, 1, 0, -1], [-1, 0, 1, 0]
-x, y = 0, 0           
-dir_num = 0           # 0: 오른쪽, 1: 아래쪽, 2: 왼쪽, 3: 위쪽
+x, y = 0, 0          
+dir_num = 0           
 
 answer[x][y] = 1
-
+cnt = 2
 for i in range(2, n * m + 1):
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
     
-    if not in_range(nx, ny) or answer[nx][ny] != 0:
-        dir_num = (dir_num + 1) % 4
-
-    x, y = x + dxs[dir_num], y + dys[dir_num]
+    if in_range(nx, ny) and answer[nx][ny] == 0:
+        x, y = x + dxs[dir_num], y + dys[dir_num]
+    else:
+        dir_num = (dir_num + 2) % 4
+        x, y = x + dxs[dir_num], y + dys[dir_num]
     answer[x][y] = i
 
 
