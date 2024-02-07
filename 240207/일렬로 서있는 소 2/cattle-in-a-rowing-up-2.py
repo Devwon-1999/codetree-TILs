@@ -8,3 +8,5 @@ for i in range(n):
         for k in range(j + 1, n):
             if cow_height[i] <= cow_height[j] <= cow_height[k]:
                 cnt += 1
+
+print(cnt)
