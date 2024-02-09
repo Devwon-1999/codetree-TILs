@@ -1,3 +1,6 @@
+import sys
+sys.set_int_max_str_digits(20000) 
+
 n = int(input())
 
 Factorial = 1
