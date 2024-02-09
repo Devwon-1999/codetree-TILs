@@ -1,9 +1,18 @@
 n = int(input())
 numList = list(map(int, input().split()))
-cnt = 0
 numList.sort()
-for i in range(n):
-    for j in range(i + 1, n):
-        if min(numList[i],numList[j]) >= max(numList[i],numList[j]) * 0.9:
-            cnt += 1
+
+cnt = 0
+i = 0
+j = 1
+
+while j < n:
+    if numList[j] >= numList[i] * 0.9:
+        cnt += j - i
+        j += 1
+    else:
+        i += 1
+        if i == j:
+            j += 1
+
 print(cnt)
