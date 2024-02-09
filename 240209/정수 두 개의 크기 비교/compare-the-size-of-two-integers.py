@@ -14,5 +14,6 @@ while j < n:
         i += 1
         if i == j:
             j += 1
+        cnt -= 1  
 
 print(cnt)
