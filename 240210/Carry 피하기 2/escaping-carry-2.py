@@ -33,4 +33,8 @@ max_Value = 0
 for i, j, k in checked_case:
     max_Value = max(max_Value, numList[i] + numList[j] + numList[k])
 
-print(max_Value)
+#경우가 있다면 경우, 없다면 -1 출력
+if max_Value:
+    print(max_Value)
+else:
+    print(-1)
