@@ -1,7 +1,13 @@
 N = int(input())
-base = []
-for i in range(N):
-    temp = list(input().split())
-    base.append(temp)
+visits = {}
 
-print(base)
+
+for _ in range(N):
+    group = input().split()
+    key = tuple(sorted(group))  
+    visits[key] = visits.get(key, 0) + 1
+
+
+max_visits = max(visits.values())
+
+print(max_visits)
