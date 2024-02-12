@@ -17,6 +17,7 @@ for price, delivery in presents:
         B -= price // 2 + delivery
         count += 1
     else:
+        count = 0  # 예산 내에서 선물을 구매할 수 없는 경우 0으로 설정
         break
 
 print(count)
