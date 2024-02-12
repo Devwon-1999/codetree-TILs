@@ -1,8 +1,8 @@
 N = int(input())
 
-base = [[0] * 5001 for i in range(5001)]
+base = [[0] * 10001 for i in range(10001)]
 
-OFFSET = 2500
+OFFSET = 5000
 
 for i in range(N):
     x1, y1, x2, y2 = map(int, input().split())
