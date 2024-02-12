@@ -1,25 +1,22 @@
 N, B = map(int, input().split())
 
-present = []
+presents = []
 
 for i in range(N):
     price, delivery = map(int, input().split())
-    present.append([price, delivery])
+    presents.append((price, delivery))
 
-present.sort()
+presents.sort(key=lambda x: (x[0] + x[1], x[0]))  # 가격 + 배송비가 적은 순서대로 정렬
 
-total_price = 0
-people = 0
-for i in present:
-    if total_price + i[0] >= B:
-        i[0] //= 2  # 쿠폰 사용
-        total_price += i[0]
-        break
+count = 0
+for price, delivery in presents:
+    if price <= B:
+        B -= price
+        count += 1
+    elif price // 2 + delivery <= B:
+        B -= price // 2 + delivery
+        count += 1
     else:
-        total_price += i[0]
-        people += 1
+        break
 
-if B < present[0][0]:  
-    print(0)
-else:
-    print(people + 1)
+print(count)
