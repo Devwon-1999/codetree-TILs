@@ -8,18 +8,18 @@ for i in range(N):
 
 present.sort()
 
-cnt = 0
+total_price = 0
 people = 0
 for i in present:
-    if cnt + sum(i) >= B:
-            i[0] //= 2
-            cnt += sum(i)
-            break
+    if total_price + i[0] >= B:
+        i[0] //= 2  # 쿠폰 사용
+        total_price += i[0]
+        break
     else:
-        cnt += sum(i)
-    people += 1
+        total_price += i[0]
+        people += 1
 
-if B < sum(present[0]):
+if B < present[0][0]:  
     print(0)
 else:
     print(people + 1)
