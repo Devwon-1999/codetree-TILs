@@ -18,5 +18,8 @@ for i in present:
     else:
         cnt += sum(i)
     people += 1
-        
-print(people + 1)
+
+if B < sum(present[0]):
+    print(0)
+else:
+    print(people + 1)
