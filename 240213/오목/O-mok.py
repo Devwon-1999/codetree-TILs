@@ -32,7 +32,7 @@ for i in range(19 - 4):
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
-            print(temp)
+
             if len(temp) == 5:
                 result.append(temp)
         
@@ -54,8 +54,14 @@ for i in range(19 - 4):
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
-            print(temp)
+
             if len(temp) == 5:
                 result.append(temp)
-for i in result:
-    print(i)
+        if result:
+            break
+        else:
+            continue
+
+
+print(base[result[0][0][0]][result[0][0][1]])
+print(result[0][2][0] + 1, result[0][2][1] - 1)
