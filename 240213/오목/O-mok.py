@@ -16,18 +16,24 @@ for i in range(19 - 4):
         if base[j][i] == 1:
             temp = []
             for x, y in zip(widthx, widthy):
+                if base[j + y][i + x] == 2:
+                    break                
                 if base[j + y][i + x] == 1:
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
 
             for x, y in zip(lengthx, lengthy):
+                if base[j + y][i + x] == 2:
+                    break
                 if base[j + y][i + x] == 1:
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
 
             for x, y in zip(diagonalx, diagonaly):
+                if base[j + y][i + x] == 2:
+                    break
                 if base[j + y][i + x] == 1:
                     temp.append([j + y + 1, i + x + 1])
                 else:
@@ -39,18 +45,24 @@ for i in range(19 - 4):
         elif base[j][i] == 2:
             for x, y in zip(widthx, widthy):
                 if base[j + y][i + x] == 1:
-                    temp.append([j + y + 1], [i + x + 1])
+                    break
+                if base[j + y][i + x] == 2:
+                    temp.append([j + y + 1, i + x + 1])
                 else:
                     break
 
             for x, y in zip(lengthx, lengthy):
                 if base[j + y][i + x] == 1:
+                    break
+                if base[j + y][i + x] == 2:
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
 
             for x, y in zip(diagonalx, diagonaly):
                 if base[j + y][i + x] == 1:
+                    break
+                if base[j + y][i + x] == 2:
                     temp.append([j + y + 1, i + x + 1])
                 else:
                     break
@@ -62,6 +74,6 @@ for i in range(19 - 4):
         else:
             continue
 
-
+print(result)
 print(base[result[0][0][0]][result[0][0][1]])
 print(result[0][2][0], result[0][2][1])
