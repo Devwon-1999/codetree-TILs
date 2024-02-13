@@ -64,4 +64,4 @@ for i in range(19 - 4):
 
 
 print(base[result[0][0][0]][result[0][0][1]])
-print(result[0][2][0] + 1, result[0][2][1] - 1)
+print(result[0][2][0], result[0][2][1])
