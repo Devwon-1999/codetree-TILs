@@ -7,5 +7,12 @@ for i in range(n):
     temp = int(input())
     move.append(temp)
 
-print(base)
-print(move)
+cnt = 0
+for index, value in enumerate(move):
+    if value != 0:
+        continue
+    else:
+        for i in move:
+            if i == base[index]:
+                cnt += 1
+print(cnt + 1)
