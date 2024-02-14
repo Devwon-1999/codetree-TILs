@@ -12,11 +12,12 @@ min_val = 1000000
 move_people = 0
 for i in range(N):
     current = bang[i]
+    move_people = 0
     for j in range(N):
         j = (i + j) % 5 #현재 방의 위치부터 전체 방까지 반복
         total_people -= current
-        current = bang[j]
+        current -= bang[j]
         move_people += total_people
     min_val = min(min_val, move_people)
-    total_people = sum(bang)
+    
 print(min_val)
