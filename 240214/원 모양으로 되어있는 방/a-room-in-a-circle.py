@@ -6,18 +6,13 @@ for i in range(N): # 방별 수용 인원 수 입력
     temp = int(input())
     bang.append(temp)
 
-total_people = sum(bang) # 전체 인원
-
 min_val = 1000000
-move_people = 0
+
 for i in range(N):
-    current = bang[i]
-    move_people = 0
-    for j in range(N):
-        j = (i + j) % 5 #현재 방의 위치부터 전체 방까지 반복
-        total_people -= current
-        current -= bang[j]
-        move_people += total_people
-    min_val = min(min_val, move_people)
+    distance = 0
+    for j in range(N): #현재 방의 위치부터 전체 방까지 반복
+        index = (i + j) % N 
+        distance += j * bang[index]
+    min_val = min(min_val, distance)
     
 print(min_val)
