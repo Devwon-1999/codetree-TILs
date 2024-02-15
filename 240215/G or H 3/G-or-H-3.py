@@ -1,7 +1,7 @@
 N, K = map(int, input().split())
 #N명의 사람, K의 사진크기
 
-base = [0 for i in range(101)] #총 100개의 위치
+base = [0 for i in range(10001)] #총 100개의 위치
 
 for i in range(N): 
     place, alpha = input().split() #위치와 알파벳
