@@ -11,7 +11,7 @@ for i in range(N): # 위치, 사탕 개수 셋팅
 
 
 result = [] #결과 리스트
-for i in index_List: #메인 알고리즘
+for i in range(101 - K): #메인 알고리즘
     candy_cnt = 0
     for j in range(i - K, i + K + 1): # 중심점으로부터 C - K ~ C + K 까지
         candy_cnt += base[j]
