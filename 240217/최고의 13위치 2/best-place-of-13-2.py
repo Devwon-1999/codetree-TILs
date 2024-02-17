@@ -19,7 +19,7 @@ if N >= 6:
     for i in range(N):
         for j in range(N - 5):
             temp = 0
-            for k in range(3):
+            for k in range(6):
                 temp += base[i][j + k]
             max_cnt = max(max_cnt, temp)
 print(max_cnt)
