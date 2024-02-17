@@ -15,6 +15,6 @@ for i in allList:
 
 subList = []
 for i in sumList:
-	subList.append(i - S)
+	subList.append(abs(i - S))
 
 print(min(subList))
