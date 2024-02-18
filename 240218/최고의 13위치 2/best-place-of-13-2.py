@@ -23,5 +23,10 @@ for i in range(N):
             if max_cnt == 6:  # 최대값일 경우 종료
                 print(max_cnt)
                 exit()
-
+for i in range(N):
+    for j in range(N - 5):
+        temp = 0
+        for k in range(6):
+            temp += base[i][j + k]
+        max_cnt = max(max_cnt, temp)
 print(max_cnt)
