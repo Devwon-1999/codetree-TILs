@@ -13,9 +13,12 @@ for i in range(N - 1):
         for k in range(3):
             temp += base[i][j + k]
         value.append(temp)
-
-max_value1 = max(value)
-value.remove(max_value1)
-max_value2 = max(value)
-value.remove(max_value2)
-print(max_value1 + max_value2)
+if N > 6:
+    max_value1 = max(value)
+    value.remove(max_value1)
+    max_value2 = max(value)
+    value.remove(max_value2)
+    print(max_value1 + max_value2)
+else:
+    max_value1 = max(value)
+    print(max_value1)
