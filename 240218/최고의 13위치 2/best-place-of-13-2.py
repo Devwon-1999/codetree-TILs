@@ -1,32 +1,27 @@
 N = int(input())
 
 base = []
-
-for i in range(N):
+for _ in range(N):
     temp = list(map(int, input().split()))
     base.append(temp)
 
 max_cnt = 0
+
+# 겹치지 않는 1x3 크기의 부분 격자에서 최대 동전 개수 계산
 for i in range(N):
     for j in range(N - 2):
-        for k in range(i + 2, N):
-            for l in range(N - 2):
-                max_cnt = max(max_cnt, base[i][j] + base[i][j + 1] + base[k][l] + base[k][l + 1])
+        # 첫 번째 1x3 부분 격자
+        grid1 = base[i][j] + base[i][j+1] + base[i][j+2]
+        
+        # 두 번째 1x3 부분 격자를 현재 격자와 겹치지 않도록 배치
+        for k in range(N):
+            if k == i:  # 첫 번째 1x3 부분 격자와 겹치지 않도록 처리
+                continue
+            grid2 = base[k][j] + base[k][j+1] + base[k][j+2]
+            max_cnt = max(max_cnt, grid1 + grid2)
 
-for i in range(N - 1):
-    for j in range(N - 2):
-        temp1 = 0
-        temp2 = 0
-        for k in range(3):
-            temp1 += base[i][j + k]
-            temp2 += base[i + 1][j + k]
-        max_cnt = max(max_cnt, temp1 + temp2)
-
-for i in range(N):
-    for j in range(N - 5):
-        temp = 0
-        for k in range(6):
-            temp += base[i][j + k]
-        max_cnt = max(max_cnt, temp)
+            if max_cnt == 6:  # 최대값일 경우 종료
+                print(max_cnt)
+                exit()
 
 print(max_cnt)
