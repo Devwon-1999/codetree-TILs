@@ -3,7 +3,7 @@
 # 🥇 실전 훈련
 |총 문제 수|티어|유형|
 |---:|---|---|
-|2|![Silver3][s3] ~ ![Gold3][g3]|`Sort` `Exhaustive Search` `Plane Sweeping`|
+|2|![Silver3][s3] ~ ![Gold3][g3]|`Exhaustive Search` `Plane Sweeping` `Sort`|
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
