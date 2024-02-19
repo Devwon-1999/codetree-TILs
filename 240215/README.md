@@ -4,19 +4,19 @@
 24년 02월 15일 목표(140px)까지 110px 남았습니다.
 
 ![30xp](https://img.shields.io/badge/EXP-30xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![1일째](https://img.shields.io/badge/연속학습-1일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-5|30xp|0일째❄️|
+5|30xp|1일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
 |[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[개념]구간 중 최대 합](https://www.codetree.ai/missions/5/problems/max-sum-of-subarray)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%EA%B5%AC%EA%B0%84%20%EC%A4%91%20%EC%B5%9C%EB%8C%80%20%ED%95%A9/max-sum-of-subarray.py)|
-|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[개념]G or H 3](https://www.codetree.ai/missions/5/problems/G-or-H-3)|![쉬움][easy]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/G%20or%20H%203/G-or-H-3.py)|
+|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[개념]G or H 3](https://www.codetree.ai/missions/5/problems/G-or-H-3)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/G%20or%20H%203/G-or-H-3.py)|
 |[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[개념]특정 구간의 원소 평균값](https://www.codetree.ai/missions/5/problems/elemental-mean-value-for-a-particular-interval)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%ED%8A%B9%EC%A0%95%20%EA%B5%AC%EA%B0%84%EC%9D%98%20%EC%9B%90%EC%86%8C%20%ED%8F%89%EA%B7%A0%EA%B0%92/elemental-mean-value-for-a-particular-interval.py)|
-|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]아름다운 수열 2](https://www.codetree.ai/missions/5/problems/beautiful-sequence-2)|![보통][medium]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4%20%EC%88%98%EC%97%B4%202/beautiful-sequence-2.py)|
-|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]바구니 안의 사탕 2](https://www.codetree.ai/missions/5/problems/candy-in-the-basket-2)|![보통][medium]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%95%88%EC%9D%98%20%EC%82%AC%ED%83%95%202/candy-in-the-basket-2.py)|
+|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]아름다운 수열 2](https://www.codetree.ai/missions/5/problems/beautiful-sequence-2)|![보통][medium]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4%20%EC%88%98%EC%97%B4%202/beautiful-sequence-2.py)|
+|[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]바구니 안의 사탕 2](https://www.codetree.ai/missions/5/problems/candy-in-the-basket-2)|![보통][medium]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240215/%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%95%88%EC%9D%98%20%EC%82%AC%ED%83%95%202/candy-in-the-basket-2.py)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
