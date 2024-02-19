@@ -12,8 +12,8 @@
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
-|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]오목](https://www.codetree.ai/missions/5/problems/O-mok)|![보통][medium]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EC%98%A4%EB%AA%A9/O-mok.py)|
-|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]숨은 단어 찾기 2](https://www.codetree.ai/missions/5/problems/find-hidden-words-2)|![어려움][hard]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EC%88%A8%EC%9D%80%20%EB%8B%A8%EC%96%B4%20%EC%B0%BE%EA%B8%B0%202/find-hidden-words-2.py)|
+|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]오목](https://www.codetree.ai/missions/5/problems/O-mok)|![보통][medium]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EC%98%A4%EB%AA%A9/O-mok.py)|
+|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]숨은 단어 찾기 2](https://www.codetree.ai/missions/5/problems/find-hidden-words-2)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EC%88%A8%EC%9D%80%20%EB%8B%A8%EC%96%B4%20%EC%B0%BE%EA%B8%B0%202/find-hidden-words-2.py)|
 |[Novice Mid / 시뮬레이션 II / dx dy technique](https://www.codetree.ai/missions?missionId=5)|[[연습]격자 위의 편안한 상태](https://www.codetree.ai/missions/5/problems/comfortable-state-on-the-grid)|![보통][medium]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EA%B2%A9%EC%9E%90%20%EC%9C%84%EC%9D%98%20%ED%8E%B8%EC%95%88%ED%95%9C%20%EC%83%81%ED%83%9C/comfortable-state-on-the-grid.py)|
 |[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[개념]모이자](https://www.codetree.ai/missions/5/problems/gather)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240213/%EB%AA%A8%EC%9D%B4%EC%9E%90/gather.py)|
 
