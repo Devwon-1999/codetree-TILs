@@ -4,17 +4,17 @@
 24년 02월 17일 목표(140px)까지 110px 남았습니다.
 
 ![30xp](https://img.shields.io/badge/EXP-30xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![3일째](https://img.shields.io/badge/연속학습-3일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-4|30xp|0일째❄️|
+4|30xp|3일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
 |[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]숨은 단어 찾기 2](https://www.codetree.ai/missions/5/problems/find-hidden-words-2)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240217/%EC%88%A8%EC%9D%80%20%EB%8B%A8%EC%96%B4%20%EC%B0%BE%EA%B8%B0%202/find-hidden-words-2.py)|
 |[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[테스트]특정 수와 근접한 합](https://www.codetree.ai/missions/5/problems/sum-close-to-particular-number)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240217/%ED%8A%B9%EC%A0%95%20%EC%88%98%EC%99%80%20%EA%B7%BC%EC%A0%91%ED%95%9C%20%ED%95%A9/sum-close-to-particular-number.py)|
-|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]최고의 13위치 2](https://www.codetree.ai/missions/5/problems/best-place-of-13-2)|![보통][medium]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240217/%EC%B5%9C%EA%B3%A0%EC%9D%98%2013%EC%9C%84%EC%B9%98%202/best-place-of-13-2.py)|
+|[Novice Mid / 완전탐색 I / 자리 수 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]최고의 13위치 2](https://www.codetree.ai/missions/5/problems/best-place-of-13-2)|![보통][medium]|![Passed][passed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240217/%EC%B5%9C%EA%B3%A0%EC%9D%98%2013%EC%9C%84%EC%B9%98%202/best-place-of-13-2.py)|
 |[Novice Mid / 완전탐색 I / 구간 단위로 완전탐색](https://www.codetree.ai/missions?missionId=5)|[[연습]G or H 2](https://www.codetree.ai/missions/5/problems/G-or-H-2)|![보통][medium]|![Failed][failed]|[링크](https://github.com/Devwon-1999/codetree-TILs/blob/main/240217/G%20or%20H%202/G-or-H-2.py)|
 
 
