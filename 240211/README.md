@@ -3,7 +3,7 @@
 # 🥇 실전 훈련
 |총 문제 수|티어|유형|
 |---:|---|---|
-|4|![Silver3][s3] ~ ![Gold3][g3]|`Exhaustive Search` `Sort` `Greedy` `HashMap` `Prime` `Two Pointer` `String`|
+|4|![Silver3][s3] ~ ![Gold3][g3]|`Prime` `Sort` `HashMap` `Two Pointer` `Greedy` `String` `Exhaustive Search`|
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
