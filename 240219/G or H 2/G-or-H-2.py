@@ -28,7 +28,10 @@ for i in range(start, end):
                     H_cnt += 1
                 elif a == "G":
                     G_cnt += 1
-
+            if H_cnt == 0:
+                tempList.append(temp)
+            if G_cnt == 0:
+                tempList.append(temp)
             if H_cnt == G_cnt:
                 tempList.append(temp)
             else:
