@@ -16,32 +16,38 @@ else:
     a1_index = numList.index(a1)
     a1_List = []
     for i in range(a1_index - 2, a1_index + 2 + 1):
-        a1_List.append(numList[i])
+        if i <= len(numList):
+            a1_List.append(numList[i])
 
     b1_index = numList.index(b1)
     b1_List = []
     for i in range(b1_index - 2, b1_index + 2 + 1):
-        b1_List.append(numList[i])
+        if i <= len(numList):
+            b1_List.append(numList[i])
 
     c1_index = numList.index(c1)
     c1_List = []
     for i in range(c1_index - 2, c1_index + 2 + 1):
-        c1_List.append(numList[i])
+        if i <= len(numList):          
+            c1_List.append(numList[i])
 
     a2_index = numList.index(a2)
     a2_List = []
     for i in range(a2_index - 2, a2_index + 2 + 1):
-        a2_List.append(numList[i])
+        if i <= len(numList):  
+            a2_List.append(numList[i])
 
     b2_index = numList.index(b2)
     b2_List = []
     for i in range(b2_index - 2, b2_index + 2 + 1):
-        b2_List.append(numList[i])
+        if i <= len(numList):
+            b2_List.append(numList[i])
 
     c2_index = numList.index(c2)
     c2_List = []
     for i in range(c2_index - 2, c2_index + 2 + 1):
-        c2_List.append(numList[i])
+        if i <= len(numList):        
+            c2_List.append(numList[i])
 
     result = []
     for i in a1_List:
