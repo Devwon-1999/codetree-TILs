@@ -7,7 +7,7 @@ for i in range(K):
         base[i] += 1
 
 base.pop(0)
-base.sort()
+base = sorted(base)
 
 center = N // 2
 print(base[center])
