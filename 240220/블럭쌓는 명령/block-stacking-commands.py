@@ -18,5 +18,6 @@ for i in range(1, N + 1):
     blocks[i] = current_blocks
 
 # 블록의 높이 배열을 정렬하고 중앙 값을 출력
+blocks.pop()
 sorted_blocks = sorted(blocks)
 print(sorted_blocks[mid_index])
