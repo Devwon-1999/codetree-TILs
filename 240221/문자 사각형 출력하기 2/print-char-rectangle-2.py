@@ -12,7 +12,7 @@ for y in range(n):
         for dx, dy in zip(dxs, dys):
             nx, ny = x + dx, y + dy
             if in_range(nx, ny) and alpha[nx][ny] == 0:
-                alpha[nx][ny] = num
+                alpha[x][y] = num
         num += 1
         
 for i in alpha:
