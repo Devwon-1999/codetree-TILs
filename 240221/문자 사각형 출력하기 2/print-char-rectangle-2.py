@@ -1,7 +1,7 @@
 n = int(input())
 
 alpha = [[0] * n for i in range(n)]
-dxs, dys = [0, 1, 0, -1] , [1, 0, -1, 0]
+dxs, dys = [0, 0] , [1, -1]
 
 def in_range(x, y):
     return 0 <= x and x < n and 0 <= y and y < n
