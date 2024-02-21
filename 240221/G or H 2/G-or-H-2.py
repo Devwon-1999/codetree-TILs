@@ -18,9 +18,8 @@ for i in range(start, end):
         temp = []
         for k in range(i, j + 1):
             temp.append(base[k])
-            
-        if len(temp) % 2 == 0:
-
+        
+        if len(temp) % 2 == 0 or len(temp) % 2 == 1:
             H_cnt = 0
             G_cnt = 0
             for a in temp:
