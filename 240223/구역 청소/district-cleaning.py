@@ -1,20 +1,16 @@
 a, b = map(int, input().split())
 c, d = map(int, input().split())
 
-min_val = 0
-if a > c:
-    min_val = c 
-else:
-    min_val = a
+base = [0 for i in range(101)]
 
-max_val = 0
-if b > d:
-    max_val = b
-else:
-    max_val = d
+for i in range(a, b):
+    base[i] += 1
+
+for i in range(c, d):
+    base[i] += 1
 
 cnt = 0
-for i in range(min_val, max_val):
-    cnt += 1
-
+for i in base:
+    if i >= 1:
+        cnt += 1
 print(cnt)
