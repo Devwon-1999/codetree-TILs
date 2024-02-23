@@ -11,11 +11,11 @@ for i in range(N):
 result = []
 for i in range(N):
     for x1, x2 in value:
-        temp = base.copy()
+        temp = base[:]
         for j in range(x1, x2 + 1):
             temp[j] -= 1
-    for i in temp:
-        if i == N:
+    for h in temp:
+        if h == N:
             result.append(1)
         else:
             continue
