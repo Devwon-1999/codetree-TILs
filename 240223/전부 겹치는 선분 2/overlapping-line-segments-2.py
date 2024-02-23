@@ -14,11 +14,17 @@ for i in range(N):
         temp = base[:]
         for j in range(x1, x2 + 1):
             temp[j] -= 1
-    for h in temp:
-        if h == N:
-            result.append(1)
-        else:
-            continue
+            
+        for h in temp:
+            if h == N - 1:
+                result.append(1)
+                break
+            else:
+                continue
+        if result:
+            break
+    if result:
+        break
 
 if result:
     print("Yes")
