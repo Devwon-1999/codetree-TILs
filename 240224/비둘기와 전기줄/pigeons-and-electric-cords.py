@@ -5,15 +5,18 @@ cnt = 0 #정답을 기록할 cnt(카운트, 움직인 횟수 계산시 사용할
 
 for i in range(N): #반복문 N번 반복
     a, b = map(int, input().split()) #a 비둘기, b 위치
-    if place[a - 1] == -1:
-        place[a - 1] = b
-    elif place[a - 1] == 1:
-        if b == 0:
-            cnt += 1
-            place[a - 1] = 0
-    elif place[a - 1] == 0:
-        if b == 1:
-            cnt += 1
-            place[a - 1] = 1
 
-print(cnt)
+    if place[a - 1] == -1: #비둘기가 초기값의 위치에 있다면
+        place[a - 1] = b   #비둘기의 위치를 변경
+
+    elif place[a - 1] == 1: #비둘기가 초기값이 아닌 1의 위치에 있으면서
+        if b == 0:          #비둘기가 0의 위치로 이동할때는? 길을 건넜다고 판단할 수 있다.
+            cnt += 1        #길건넌 횟수인 cnt 변수에 1을 더함
+            place[a - 1] = 0#그러면서 현재 위치를 변경해줌
+
+    elif place[a - 1] == 0: #비둘기가 초기값이 아닌 0의 위치에 있으면서
+        if b == 1:          #비둘기가 1의 위치로 이동할때는? 길을 건넜다고 판단할 수 있다.
+            cnt += 1        #길건넌 횟수인 cnt 변수에 1을 더함
+            place[a - 1] = 1#그러면서 현재 위치를 변경해줌
+
+print(cnt) #정답 출력
