@@ -20,7 +20,7 @@ for i in range(m):
         if index == n:
             continue
         else:
-            password.pop(index + 1)
+            password.pop(index)
     
     elif input_val[0] == "P":
         password.insert(index, input_val[1])
