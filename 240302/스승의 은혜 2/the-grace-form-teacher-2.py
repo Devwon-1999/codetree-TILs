@@ -14,6 +14,6 @@ for i in price_List:
         sum_price += i
         cnt += 1
 
-if cnt != B and B >= sum_price + price_List[cnt] // 2:
+if cnt != N and B >= sum_price + price_List[cnt] // 2:
     sum_price + price_List[cnt] // 2
 print(cnt)
