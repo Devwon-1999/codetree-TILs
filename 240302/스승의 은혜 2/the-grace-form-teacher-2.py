@@ -5,15 +5,23 @@ for i in range(N):
     price = int(input())
     price_List.append(price)
 
-price_List.sort()
+price_List_cul = []
+for i in range(N):
+    temp = price_List.copy()
+    temp[i] = temp[i] // 2
+    price_List_cul.append(temp)
 
-sum_price = 0
-cnt = 0
-for i in price_List:
-    if B > sum_price:
-        sum_price += i
-        cnt += 1
+max_cnt = 0
+for i in price_List_cul:
+    i.sort()
+    cnt = 0
+    sum_price = 0
+    for j in i:
+        if B > sum_price + j:
+            sum_price += j
+            cnt += 1 
+        else:
+            break
+    max_cnt = max(max_cnt, cnt)        
 
-if cnt != N and B >= sum_price + price_List[cnt] // 2:
-    sum_price + price_List[cnt] // 2
-print(cnt)
+print(max_cnt)
