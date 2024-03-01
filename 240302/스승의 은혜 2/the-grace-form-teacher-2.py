@@ -14,10 +14,11 @@ for i in range(N):
 max_cnt = 0
 for i in price_List_cul:
     i.sort()
+
     cnt = 0
     sum_price = 0
     for j in i:
-        if B > sum_price + j:
+        if B >= sum_price + j:
             sum_price += j
             cnt += 1 
         else:
