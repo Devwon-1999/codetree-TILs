@@ -13,5 +13,6 @@ for i in price_List:
     if B > sum_price:
         sum_price += i
         cnt += 1
-
+if B >= sum_price + price_List[cnt] // 2:
+    sum_price + price_List[cnt] // 2
 print(cnt)
