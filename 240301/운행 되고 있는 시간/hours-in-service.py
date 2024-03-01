@@ -11,9 +11,9 @@ for i in range(N):
 
 answer = []
 for i in fire_1:
-    temp = [0 for i in range(50)]
+    temp = [0 for i in range(1001)]
     for j in i:
-        for time in range(j[0], j[1] + 1):
+        for time in range(j[0], j[1]):
             temp[time] += 1
 
     cnt = 0
@@ -22,4 +22,4 @@ for i in fire_1:
             cnt += 1
     answer.append(cnt)
 
-print(min(answer))
+print(max(answer))
