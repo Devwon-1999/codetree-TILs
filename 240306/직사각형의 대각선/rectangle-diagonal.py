@@ -7,7 +7,7 @@ def count_squares(x, y):
     y //= gcd
 
     lcm = gcd * x * y
-    squares_with_diagonal = (x + y - 1) * gcd
+    squares_with_diagonal = (x + y - gcd)
 
     return squares_with_diagonal * lcm // (x * y)
 
