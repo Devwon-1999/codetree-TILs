@@ -1,23 +1,26 @@
 class Stack:
-    def __init__(self):          # 빈 스택 하나를 생성합니다.
+    def __init__(self):          
         self.items = []
                 
-    def push(self, item):        # 스택에 데이터를 추가합니다.
+    def push(self, item):        
         self.items.append(item)
                 
-    def empty(self):             # 스택이 비어있으면 True를 반환합니다.
-        return not self.items
+    def empty(self):             
+        if len(self.items) == 0:
+            return 1
+        else:
+            return 0
                 
-    def size(self):              # 스택에 있는 데이터 수를 반환합니다.
+    def size(self):              
         return len(self.items)
         
-    def pop(self):               # 스택의 가장 위에 있는 데이터를 반환하고 제거합니다.
+    def pop(self):               
         if self.empty():
             raise Exception("Stack is empty")
             
         return self.items.pop()
                 
-    def top(self):               # 스택의 가장 위에 있는 데이터를 제거하지 않고 반환합니다.
+    def top(self):               
         if self.empty():
             raise Exception("Stack is empty")
                         
@@ -36,9 +39,6 @@ for i in range(N):
     elif temp[0] == "size":
         print(s.size())
     elif temp[0] == "empty":  
-        if s.empty:
-            print(0)
-        else:
-            print(1)
+        print(s.empty())
     elif temp[0] == "top":
         print(s.top())
