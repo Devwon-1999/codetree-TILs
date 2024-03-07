@@ -29,19 +29,22 @@ class Stack:
 n = input()
 s = Stack()
 answer = []
-for i in range(0, len(n)):
-  if n[i] == "(":
-    s.push("(")
-  else:
-    if s.empty() == 1:
-      continue
-    s.pop()
-  if s.empty() == 0:
-    answer.append(0)
-  else:
-    answer.append(1)
-
-if 1 in answer:
-  print("Yes")
-else:
+if n[0] == ")":
   print("No")
+else:
+  for i in range(0, len(n)):
+    if n[i] == "(":
+      s.push("(")
+    else:
+      if s.empty() == 1:
+        continue
+      s.pop()
+    if s.empty() == 0:
+      answer.append(0)
+    else:
+      answer.append(1)
+
+  if 1 in answer:
+    print("Yes")
+  else:
+    print("No")
