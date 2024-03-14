@@ -6,7 +6,6 @@ two = list(map(int, input().split())) # 두 번째 조합
 N_List = [i for i in range(1, N + 1)] #자물쇠의 숫자 범위
 
 #첫번째 자리와 조합의 거리가 2 이내인 경우
-
 # 각 자릿수 별 인덱스
 one_index_1 = N_List.index(one[0])
 two_index_1 = N_List.index(one[1])
@@ -19,11 +18,14 @@ one_3 = [] #세 번째 수의 -2 ~ + 2 범위
 
 # 각 자릿수 별 범위 대입
 for i in range(one_index_1 - 2, one_index_1 + 3):
-    one_1.append(N_List[i])
+    if N_List[i]:
+        one_1.append(N_List[i])
 for i in range(two_index_1 - 2, two_index_1 + 3):
-    one_2.append(N_List[i])
+    if N_List[i]:
+        one_2.append(N_List[i])
 for i in range(three_index_1 - 2, three_index_1 + 3):
-    one_3.append(N_List[i])   
+    if N_List[i]:
+        one_3.append(N_List[i])
 
 
 #두번째 자리와 조합의 거리가 2 이내인 경우
@@ -39,11 +41,14 @@ two_3 = [] #세 번째 수의 -2 ~ + 2 범위
 
 # 각 자릿수 별 범위 대입
 for i in range(one_index_2 - 2, one_index_2 + 3):
-    two_1.append(N_List[i])
+    if N_List[i]:
+        two_1.append(N_List[i])
 for i in range(two_index_2 - 2, two_index_2 + 3):
-    two_2.append(N_List[i])
+    if N_List[i]:
+        two_2.append(N_List[i])
 for i in range(three_index_2 - 2, three_index_2 + 3):
-    two_3.append(N_List[i])   
+    if N_List[i]:
+        two_3.append(N_List[i])   
 
 
 #첫번째 혹은 두번째를 만족할 경우 잠물쇠는 열리게 된다.
