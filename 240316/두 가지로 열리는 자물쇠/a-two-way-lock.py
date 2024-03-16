@@ -28,7 +28,7 @@ def return_range(arr):
 
 
 def is_in_range(i):
-    if i in range(len(N_List)):
+    if i in range(-len(N_List), len(N_List)):
         return True
     else:
         return False
