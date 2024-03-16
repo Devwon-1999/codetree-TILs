@@ -17,13 +17,21 @@ def return_range(arr):
     for i in range(index_1 - 2, index_1 + 3):
         if is_in_range(i):
             one.append(N_List[i])
+        elif i == len(N_List):
+            a = 0
+            one.append(N_List[a])
     for i in range(index_2 - 2, index_2 + 3):
         if is_in_range(i):
             two.append(N_List[i])
+        elif i == len(N_List):
+            a = 0
+            two.append(N_List[a])
     for i in range(index_3 - 2, index_3 + 3):
         if is_in_range(i):
             three.append(N_List[i])
-
+        elif i == len(N_List):
+            a = 0
+            three.append(N_List[a])
     return one, two, three
 
 
@@ -36,6 +44,7 @@ def is_in_range(i):
 
 one_1, one_2, one_3 = return_range(one)
 two_1, two_2, two_3 = return_range(two) 
+
 
 result = [] #정답
 
