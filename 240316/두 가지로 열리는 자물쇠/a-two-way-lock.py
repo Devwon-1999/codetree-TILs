@@ -20,17 +20,26 @@ def return_range(arr):
         elif i == len(N_List):
             a = 0
             one.append(N_List[a])
+        elif i > len(N_List):
+            a = i - len(N_List)
+            one.append(N_List[a])
     for i in range(index_2 - 2, index_2 + 3):
         if is_in_range(i):
             two.append(N_List[i])
         elif i == len(N_List):
             a = 0
             two.append(N_List[a])
+        elif i > len(N_List):
+            a = i - len(N_List)
+            two.append(N_List[a])
     for i in range(index_3 - 2, index_3 + 3):
         if is_in_range(i):
             three.append(N_List[i])
         elif i == len(N_List):
             a = 0
+            three.append(N_List[a])
+        elif i > len(N_List):
+            a = i - len(N_List)
             three.append(N_List[a])
     return one, two, three
 
