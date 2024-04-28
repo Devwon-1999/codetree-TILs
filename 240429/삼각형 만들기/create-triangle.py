@@ -28,9 +28,14 @@ for i in range(len(points)):
                 cnt += 1
 
             if cnt == 2:
-                area = abs((points[i][0] * points[j][1]) + (points[j][0] * points[k][1]) + (points[k][0] * points[i][1]) - 
-                            (points[i][1] * points[j][0]) + (points[j][1] * points[k][0]) + (points[k][1] * points[i][0]))
+                a = (points[i][0] * points[j][1]) + (points[j][0] * points[k][1]) + (points[k][0] * points[i][1])
+                b = (points[i][1] * points[j][0]) + (points[j][1] * points[k][0]) + (points[k][1] * points[i][0])
+                area = abs(a - b)
                 max_val = max(max_val, area)
+
+            else:
+                continue
+
             # print(points[i], points[j], points[k])
             # print(cnt)
 print(max_val)
